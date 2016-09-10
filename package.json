@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist --copy-files --source-maps inline",
-    "start": "budo ./src/index.jsx --live --port 3000 -- -t babelify -t envify",
+    "start": "budo ./src/index.jsx --open --live --port 3000 -- -t babelify -t envify",
     "lint": "uber-standard",
     "precommit": "npm run lint -s",
     "prepush": "npm run lint -s"
