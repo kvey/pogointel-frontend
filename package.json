@@ -44,6 +44,7 @@
     "lodash": "^4.15.0",
     "luma.gl": "^2.4.2",
     "object-assign": "^4.0.1",
+    "r-dom": "^2.3.0",
     "react-map-gl": "^0.6.9",
     "regenerator-runtime": "^0.9.5",
     "scale-color-perceptual": "^1.1.2",

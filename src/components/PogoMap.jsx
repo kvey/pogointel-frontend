@@ -28,7 +28,12 @@ const PROP_TYPES = {
 class DeckGLWithDeconstructor extends DeckGLOverlay {
   componentWillUnmount(){
     console.log("UNMOUNTING");
+    try {
     this.state.gl.getExtension('WEBGL_lose_context').loseContext();
+    } catch (e) {
+      console.debug("intentional context loss");
+    }
+
   }
 }
 
